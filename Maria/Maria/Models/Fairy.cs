@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-
+﻿
 namespace Maria.Models
 {
+    using System;
+    using System.ComponentModel.DataAnnotations;
+
     public enum Lista
     {
         Key,
@@ -22,7 +20,9 @@ namespace Maria.Models
         public string NickName { get; set; }
         [Required]
         public Lista Wishes { get; set; }
-                public string Email { get; set; }
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+        [Display(Name ="Cumpleaños")]
         public DateTime Birthdate { get; set; }
         
 
