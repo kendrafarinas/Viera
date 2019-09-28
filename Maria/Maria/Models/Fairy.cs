@@ -22,8 +22,7 @@ namespace Maria.Models
         public string NickName { get; set; }
         [Required]
         public Lista Wishes { get; set; }
-
-        public string Email { get; set; }
+                public string Email { get; set; }
         public DateTime Birthdate { get; set; }
         
 
