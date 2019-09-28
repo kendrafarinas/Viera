@@ -12,5 +12,7 @@ namespace Maria.Models
         {
 
         }
+
+        public System.Data.Entity.DbSet<Maria.Models.Fairy> Fairies { get; set; }
     }
 }
